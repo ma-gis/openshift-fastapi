@@ -5,11 +5,11 @@ app = FastAPI()
 
 @app.get('/')
 def index():
-    return {'data': 'Hello FastAPI!'}
+    return {'data': 'Hello FastAPI 2!'}
 
 @app.get('/message')
 def index():
-    return {'data': 'FastAPI is great!'}
+    return {'data': 'FastAPI is great 2!'}
 
 if __name__ == "__main__":
     uvicorn.run(app, host='0.0.0.0', port=8080)
